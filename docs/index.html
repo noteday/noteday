@@ -9,9 +9,102 @@
   <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+  <link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/docsify-changelog-plugin@latest/dist/style.css"
+/>
+<link
+  rel="stylesheet"
+  href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+/>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+
+ <style>
+    :root{
+      --theme-color : #ff813f;
+      --docsify-print-top: 0;
+      --docsify-print-left:unset;
+      --docsify-print-right: unset;
+      --docsify-print-bottom: unset;
+    }
+
+
+
+    #docsify_print_btn{
+    cursor: pointer; 
+    height: 18px;
+    position: absolute;
+    top: var(--docsify-print-top);
+    left: var(--docsify-print-left);
+    right : var(--docsify-print-right);
+     bottom : var(--docsify-print-bottom)
+    }
+    #docsify_print_btn > svg {
+  width: inherit;
+    height: inherit;
+    position: absolute;
+    margin: 0 10px;
+    }
+  </style>
 </head>
+<style>
+  :root{
+    --theme-color : #ff813f;
+    --docsify-print-top: 0;
+    --docsify-print-left:unset;
+    --docsify-print-right: unset;
+    --docsify-print-bottom: unset;
+  }
+  #docsify_print_btn{
+  cursor: pointer; 
+  height: 18px;
+  position: absolute;
+  top: var(--docsify-print-top);
+  left: var(--docsify-print-left);
+  right : var(--docsify-print-right);
+   bottom : var(--docsify-print-bottom)
+  }
+  #docsify_print_btn > svg {
+width: inherit;
+  height: inherit;
+  position: absolute;
+  margin: 0 10px;
+  }
+</style>
 <body>
+  <nav>
+    <ul>
+      <ul><p><a href="#">Home</a></p></ul>
+      <li>
+        <p>
+          packages
+          <ul>
+            <li>
+              <p>
+                <a href="/#/docsify-changelog-plugin">
+                  docsify-changelog-plugin
+                </a>
+              </p>
+            </li>
+          <li>
+            <p>
+              <a href="/#/docsify-top-banner-plugin">
+                docsify-top-banner-plugin
+              </a>
+            </p>
+          </li>
+           <li>
+            <p>
+              <a href="/#/docsify-dark-mode">
+                docsify-dark-mode
+              </a>
+            </p>
+          </li>
+        </ul>
+        </p>
+      </li>
+    </ul>
+  </nav>
   <div id="app"></div>
   <script>
     const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -19,10 +112,12 @@
       repo: 'noteday',
       loadSidebar: 'sidebar.md',
       subMaxLevel: 3 ,
-      basePath:'/noteday/',
+     // basePath:'/noteday/',
       alias: {
         '/.*/_sidebar.md': '/_sidebar.md'
       },
+      loadNavbar : false, // IMPORTANT
+      changelog : 'CHANGELOG.md' ,// path of your changelog, it can be remote as well
       auto2top: true,
       name: 'Note Day', 
       //logo: '/logo.jpg',
@@ -114,8 +209,11 @@
   <!-- mermaid erquirements -->
   <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <script type="text/javascript">mermaid.initialize({ startOnLoad: false });</script>
-
+  
   <!--搜索-->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+
+  <script src="//unpkg.com/docsify-slides/dist/docsify-slides.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-changelog-plugin@latest/dist/index.js"></script>
 </body>
 </html>

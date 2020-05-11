@@ -7,7 +7,16 @@
     - [P2 反向传播](deeplearning/chapter2.md)
     - [P3 深度学习技巧](deeplearning/chapter3.md)
     - [P4 CNN](deeplearning/chapter4.md)
-
+    - [P5 半监督学习](deeplearning/chapter5.md)
+    - [P6 无监督学习-线性降维](deeplearning/chapter6.md)
+    - [P7 RNN](deeplearning/chapter7.md)
+- 主题三：  nlp
+    - [P1 LSTM/BiLSTM](nlp/chapter1.md)
+- 主题四：  pytorch    
+    - [P1 pytorch常用函数](pytorch/chapter1.md)
+    - [P1 LSTM/](deeplearning/chapter7.md)
+- 主题四：  开发小记    
+    - [P1 Markdown](recipe/chapter1.md)
 
 
 
