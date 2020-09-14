@@ -11,11 +11,13 @@
     - [P7 RNN](deeplearning/chapter7.md)
 - 主题三：  nlp
     - [P1 LSTM/BiLSTM](nlp/chapter1.md)
+    - [P1 LSTM/BiLSTM](nlp/chapter2.md)
 - 主题四：  pytorch    
     - [P1 pytorch常用函数](pytorch/chapter1.md)
     - [P1 LSTM/](deeplearning/chapter7.md)
 - 主题四：  开发小记    
     - [P1 Markdown](recipe/chapter1.md)
+    - [P1 linux](recipe/chapter2.md)
 
 
 
