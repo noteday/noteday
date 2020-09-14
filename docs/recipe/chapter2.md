@@ -1,17 +1,18 @@
-title: 基于springboot2的jar项目发布和控制流程
-date: '2019-09-19 23:20:25'
-updated: '2019-09-19 23:20:25'
-tags: [java]
-permalink: /articles/2019/09/19/1568906425769.html
----
-# 1.打包成jar项目
-# 2.执行对应语句
+## linux的应用
+### crontab定时器
+```js
+(1)crontab -e
+* * * * * /www/wwwroot/zdomin.com/noteday/update.sh >> /www/wwwroot/zdomin.com/noteday/log
+
+(2)
+sudo echo "*/5 * * * * /tmp/produce.sh" > /tmp/time
+crontab /tmp/time
+
+(3)crontab -e
+查看定时器
 ```
-$ nohup java -jar test.jar >temp.txt & 
-//这种方法会把日志文件输入到你指定的文件中，没有则会自动创建。进程会在后台运行。	
-```
-# 3.控制该项目在后台进行
-```
+### 控制该项目在后台进行
+```js
 （1）$ nohup java -jar test.jar & 
 //nohup 意思是不挂断运行命令,当账户退出或终端关闭时,程序仍然运行 
 //当用 nohup 命令执行作业时，缺省情况下该作业的所有输出被重定向到nohup.out的文件中 //除非另外指定了输出文件。	
@@ -28,4 +29,8 @@ $ nohup java -jar test.jar >temp.txt &
 （7） $ fg 2
  //如果想将某个作业调回前台控制，只需要 fg + 编号即可。
 ```
+
+### 查看端口号
+```js
 netstat -tnlp | grep :22
+```
