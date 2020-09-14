@@ -1,3 +1,5 @@
+![](./logo.jpg)
+
 ## 参考文献
 - [pytorch官方文档](https://pytorch.org/docs/)
 - [P2 为什么要学习机器学习](https://datawhalechina.github.io/leeml-notes/#/chapter2/chapter2)
