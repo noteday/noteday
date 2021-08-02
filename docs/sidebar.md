@@ -1,6 +1,5 @@
 
 - 主题一：  机器学习
-    - [P2 为什么要学习机器学习](123/123.md)      
 - 主题二：  深度学习
     - [P1 深度学习简介](deeplearning/chapter1.md)
     - [P2 反向传播](deeplearning/chapter2.md)
@@ -19,9 +18,8 @@
     - [P2 linux](recipe/chapter2.md)
 - 主题五：  李永乐    
     - [P1 个人税收](teacherLi/chapter1.md)
-    - [P2 linux](teacherLi/chapter2.md)
-
-
+    - [P2 赌徒输光原理](teacherLi/chapter2.md)
+    - [P3 PB和PE](teacherLi/chapter3.md)
 
 
 
